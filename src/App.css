@@ -1,38 +1,147 @@
+* {
+  margin: 0;
+  padding: 0;
+  /* max-width: 2000px; */
+}
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
   min-height: 100vh;
+}
+
+.App,
+html,
+body {
+  font-size: 1rem;
+  font-family: "Source Sans Pro", sans-serif;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.App.light,
+html.light,
+body.light {
+  background-color: #e9ecec;
+  color: #112225;
+}
+
+.App.dark,
+html.dark,
+body.dark {
+  background-color: #17181d;
+  color: #d4dcdd;
+}
+
+.home-banner {
+  background-repeat: no-repeat;
+  width: 100%;
+  min-height: 330px;
+  background-size: 100vw 330px;
+  position: relative;
+  top: 0;
+  text-shadow: 0px 4px 3px rgba(0, 0, 0, 0.4), 0px 8px 13px rgba(0, 0, 0, 0.1), 0px 18px 23px rgba(0, 0, 0, 0.1);
+}
+
+.home-banner h1 {
+  padding-top: 6rem;
+  margin-left: 10rem;
+  font-size: 3.8rem;
+}
+
+.home-banner .lower-banner {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: column-reverse;
+          flex-direction: column-reverse;
 }
 
-.App-link {
-  color: #61dafb;
+.home-banner .home-link-list {
+  margin-left: auto;
+  margin-right: 4rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 40vw;
+  padding: 1.3rem;
+  padding-bottom: 1.8rem;
+  font-size: 1.4rem;
+  color: rgba(0, 0, 0, 0.6);
+  text-shadow: 2px 4px 4px rgba(0, 0, 0, 0.2), 0px -5px 10px rgba(255, 255, 255, 0.15);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.home-banner .home-link-list a {
+  color: #112225;
 }
+
+.home-banner .banner-underline {
+  height: 3px;
+  width: 100vw;
+  position: absolute;
+  bottom: 1rem;
+}
+
+.home-banner.dark {
+  background-image: url("./images/tokyo-glitch-2.png");
+  background-position: left top;
+}
+
+.home-banner.dark .lower-banner {
+  background-color: #17181db9;
+}
+
+.home-banner.dark .home-link-list a {
+  color: #d4dcdd;
+}
+
+.home-banner.dark .banner-underline.dark {
+  background-color: #17181d;
+}
+
+.home-page.light {
+  background-color: #d4dcdd;
+  background-color: #ebecec;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#f5f5f5), to(#e5edee));
+  background-image: linear-gradient(#f5f5f5, #e5edee);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#f5f5f5), to(#e9f2f3));
+  background-image: linear-gradient(#f5f5f5, #e9f2f3);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#f5f5f5), to(#e9ecec));
+  background-image: linear-gradient(#f5f5f5, #e9ecec);
+}
+
+.home-banner.light {
+  background-image: url("./images/white-wave-1.png");
+  background-position: left bottom;
+}
+
+.home-banner.light .banner-underline.light {
+  background-color: #d4dcdd;
+  background-color: #f5f5f5;
+}
+
+.home-blogs-section {
+  padding: 1rem;
+}
+/*# sourceMappingURL=App.css.map */

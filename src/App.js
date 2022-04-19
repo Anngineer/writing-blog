@@ -1,24 +1,27 @@
-import logo from './logo.svg';
-import './App.css';
+// import logo from './logo.svg';
+import { useState } from "react";
+import "./App.css";
+import Home from "./Home";
 
 function App() {
+  const [theme, setTheme] = useState(
+    localStorage.getItem("blogTheme")
+      ? localStorage.getItem("blogTheme")
+      : "dark"
+  );
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      {theme === "light" && (
+        <div className="App light">
+          <Home theme={theme} setTheme={setTheme} />
+        </div>
+      )}
+      {theme === "dark" && (
+        <div className="App dark">
+          <Home theme={theme} setTheme={setTheme} />
+        </div>
+      )}
+    </>
   );
 }
 
