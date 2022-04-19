@@ -19,7 +19,6 @@ const Home = ({ theme, setTheme }) => {
         <div className="home-page dark">
           <HomeBanner theme={theme} setTheme={setTheme} />
           <div className="home-blogs-section">
-            <div>Banner dark</div>
             <div>First blog</div>
             <div>More blogs</div>
           </div>

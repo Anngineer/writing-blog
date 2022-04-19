@@ -29,8 +29,8 @@ body {
 .App.light,
 html.light,
 body.light {
-  background-color: #e9ecec;
-  color: #112225;
+  background-color: #eff3f3;
+  color: #0c1f22;
 }
 
 .App.dark,
@@ -71,7 +71,7 @@ body.dark {
 
 .home-banner .home-link-list {
   margin-left: auto;
-  margin-right: 4rem;
+  margin-right: 3rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -79,21 +79,34 @@ body.dark {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 40vw;
+  width: 60vw;
   padding: 1.3rem;
   padding-bottom: 1.8rem;
-  font-size: 1.4rem;
+  font-size: 1.2rem;
   color: rgba(0, 0, 0, 0.6);
   text-shadow: 2px 4px 4px rgba(0, 0, 0, 0.2), 0px -5px 10px rgba(255, 255, 255, 0.15);
 }
 
 .home-banner .home-link-list a {
   color: #112225;
+}
+
+.home-banner .home-link-list button {
+  padding: 0.4rem 0.4rem;
+  font-weight: 600;
+  font-size: medium;
+  border-radius: 50px;
+  border: none;
+}
+
+.home-banner .home-link-list button:hover {
+  cursor: pointer;
 }
 
 .home-banner .banner-underline {
@@ -116,19 +129,21 @@ body.dark {
   color: #d4dcdd;
 }
 
+.home-banner.dark .home-link-list button {
+  background-color: white;
+}
+
+.home-banner.dark .home-link-list button:hover {
+  background-color: pink;
+}
+
 .home-banner.dark .banner-underline.dark {
-  background-color: #17181d;
+  background-color: #17181d88;
 }
 
 .home-page.light {
-  background-color: #d4dcdd;
-  background-color: #ebecec;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#f5f5f5), to(#e5edee));
-  background-image: linear-gradient(#f5f5f5, #e5edee);
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#f5f5f5), to(#e9f2f3));
-  background-image: linear-gradient(#f5f5f5, #e9f2f3);
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#f5f5f5), to(#e9ecec));
-  background-image: linear-gradient(#f5f5f5, #e9ecec);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#f5f5f5), to(#eff3f3));
+  background-image: linear-gradient(#f5f5f5, #eff3f3);
 }
 
 .home-banner.light {
@@ -137,11 +152,19 @@ body.dark {
 }
 
 .home-banner.light .banner-underline.light {
-  background-color: #d4dcdd;
-  background-color: #f5f5f5;
+  background-color: #f5f5f598;
 }
 
-.home-blogs-section {
+.home-banner.light button {
+  color: #eff3f3;
+  background-color: #17181d;
+}
+
+.home-banner.light button:hover {
+  color: lightseagreen;
+}
+
+.home-blog-section {
   padding: 1rem;
 }
 /*# sourceMappingURL=App.css.map */
