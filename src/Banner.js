@@ -1,8 +1,13 @@
 import { Button, Icon } from "semantic-ui-react";
 import { Link } from "react-router-dom";
+import { useState } from "react";
 const Banner = ({ theme, setTheme }) => {
   const handleThemeButton = () => {
     setTheme(theme === "light" ? "dark" : "light");
+  };
+  const [dropDownVisible, setDropDownVisible] = useState(false);
+  const handleDropDown = () => {
+    setDropDownVisible(!dropDownVisible);
   };
   return (
     <>
@@ -10,20 +15,44 @@ const Banner = ({ theme, setTheme }) => {
         <div className="banner light">
           <h1>Word &nbsp;Hoard</h1>
           <div className="lower-banner">
+            <div className="small-link-list">
+              <div className="visible-nav-bar">
+                <button
+                  className="drop-down-button"
+                  onClick={() => handleDropDown()}
+                >
+                  <Icon name="bars"></Icon>
+                </button>
+                <button
+                  className="theme-button"
+                  onClick={() => handleThemeButton()}
+                >
+                  <Icon name="moon" />
+                </button>
+              </div>
+            </div>
+
             <div className="home-link-list">
-              {/* <a href={"https://www.google.com/"}>FANTASY</a>
-              <a href={"https://www.google.com/"}>SCI FI</a>
-              <a href={"https://www.google.com/"}>NONFICTION</a> */}
               <Link to="/">HOARD</Link>
               <Link to="/author">AUTHOR</Link>
               <Link to="/archive">ARCHIVE</Link>
-              {/* <a href={"https://www.google.com/"}>ARCHIVE</a>
-              <a href={"https://www.google.com/"}>AUTHOR</a> */}
-              <button onClick={() => handleThemeButton()}>
+
+              <button
+                className="theme-button"
+                onClick={() => handleThemeButton()}
+              >
                 <Icon name="moon" />
               </button>
             </div>
             <div className="banner-underline light"></div>
+
+            {dropDownVisible && (
+              <div className="small-home-link-list">
+                <Link to="/">HOARD</Link>
+                <Link to="/author">AUTHOR</Link>
+                <Link to="/archive">ARCHIVE</Link>
+              </div>
+            )}
           </div>
         </div>
       )}
@@ -32,22 +61,45 @@ const Banner = ({ theme, setTheme }) => {
           <h1>Word &nbsp;Hoard</h1>
 
           <div className="lower-banner">
+            {/* Narrow width screen */}
+            <div className="small-link-list">
+              <div className="visible-nav-bar">
+                <button
+                  className="drop-down-button"
+                  onClick={() => handleDropDown()}
+                >
+                  <Icon name="bars"></Icon>
+                </button>
+                <button
+                  className="theme-button"
+                  onClick={() => handleThemeButton()}
+                >
+                  <Icon name="sun" />
+                </button>
+              </div>
+            </div>
+            {/* Wider Width Screen */}
             <div className="home-link-list">
-              {/* <a href={"https://www.google.com/"}>_fantasy</a>
-              <a href={"https://www.google.com/"}>_sci fi</a>
-              <a href={"https://www.google.com/"}>_nonfiction</a>
-              <a href={"https://www.google.com/"}>_archive</a>
-              <a href={"https://www.google.com/"}>_author</a> */}
               <Link to="/">_hoard</Link>
-
               <Link to="/author">_author</Link>
               <Link to="/archive">_archive</Link>
-
-              <button onClick={() => handleThemeButton()}>
+              <button
+                className="theme-button"
+                onClick={() => handleThemeButton()}
+              >
                 <Icon name="sun" />
               </button>
             </div>
+
+            {/* --------------------------- */}
             <div className="banner-underline dark"></div>
+            {dropDownVisible && (
+              <div className="small-home-link-list">
+                <Link to="/">_hoard</Link>
+                <Link to="/author">_author</Link>
+                <Link to="/archive">_archive</Link>
+              </div>
+            )}
           </div>
         </div>
       )}

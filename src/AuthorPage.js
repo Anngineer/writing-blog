@@ -1,5 +1,5 @@
 import Banner from "./Banner";
-import retrogirl6a from "./images/retrogirl6a.jpg";
+import retrogirl2a from "./images/retrogirl2a.jpg";
 
 const AuthorPage = ({ theme, setTheme }) => {
   return (
@@ -10,7 +10,7 @@ const AuthorPage = ({ theme, setTheme }) => {
         <div className="author-container">
           <div className="image-container">
             <img
-              src={retrogirl6a}
+              src={retrogirl2a}
               alt="a vintage illustration of a girl with dark hair"
             />
           </div>

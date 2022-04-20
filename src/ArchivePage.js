@@ -26,6 +26,22 @@ const ArchivePage = ({ theme, setTheme }) => {
             </li>
           ))}
         </ul>
+        <h3>Sci Fi</h3>
+        <ul>
+          {scifiBlogs.map((blog) => (
+            <li key={blog.id}>
+              <Link to={`/blogs/${blog.id}`}> {blog.title}</Link>
+            </li>
+          ))}
+        </ul>
+        <h3>Nonfiction</h3>
+        <ul>
+          {nonfictionBlogs.map((blog) => (
+            <li key={blog.id}>
+              <Link to={`/blogs/${blog.id}`}> {blog.title}</Link>
+            </li>
+          ))}
+        </ul>
       </div>
     </div>
   );
