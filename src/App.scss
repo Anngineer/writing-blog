@@ -571,6 +571,23 @@ body.dark {
   .blog-cards {
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
     grid-gap: 2rem;
+    .blog-header {
+      max-width: fit-content;
+    }
+  }
+}
+@media (max-width: 330px) {
+  .blog-cards {
+    grid-template-columns: repeat(auto-fill, minmax(150px, 320px));
+    grid-gap: 2rem;
+    padding: 0;
+    margin: 0;
+    .blog-card {
+      max-width: 80vw;
+
+      margin-right: auto;
+      margin-left: auto;
+    }
   }
 }
 
@@ -632,6 +649,11 @@ body.dark {
   .row-two {
     padding-left: 1rem;
     padding-right: 1rem;
+  }
+}
+@media (max-width: 330px) {
+  .row-two {
+    padding-left: 0;
   }
 }
 
