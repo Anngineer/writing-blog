@@ -21,7 +21,9 @@ const HomeBlogSection = () => {
         <div className="new-post-info">
           <h3>{backendCards[idNum - 1].title}</h3>
           <p>{backendCards[idNum - 1].blurb} </p>
-          <p>{backendCards[idNum - 1].tags.join(", ")}</p>
+          <p>
+            <b>Tags:</b> {backendCards[idNum - 1].tags.join(", ")}
+          </p>
         </div>
       </Link>
 
