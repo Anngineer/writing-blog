@@ -2,6 +2,8 @@
 import { BrowserRouter, Link, Route, Routes, Navigate } from "react-router-dom";
 import BlogsInfo from "./BlogsInfo";
 import ScrollToTop from "./ScrollToTop";
+import AuthorPage from "./AuthorPage";
+import ArchivePage from "./ArchivePage";
 
 import { useState } from "react";
 import "./App.css";
@@ -24,8 +26,14 @@ function App() {
                   path="/"
                   element={<Home theme={theme} setTheme={setTheme} />}
                 />
-                {/* <Route path="/archive" element={<ArchivePage />}></Route> */}
-                {/* <Route path="/author" element={<AuthorPage />}></Route> */}
+                <Route
+                  path="/archive"
+                  element={<ArchivePage theme={theme} setTheme={setTheme} />}
+                ></Route>
+                <Route
+                  path="/author"
+                  element={<AuthorPage theme={theme} setTheme={setTheme} />}
+                ></Route>
 
                 <Route path="/blogs/:id" element={<BlogsInfo />}></Route>
               </Routes>
@@ -38,8 +46,14 @@ function App() {
                   path="/"
                   element={<Home theme={theme} setTheme={setTheme} />}
                 />
-                {/* <Route path="/archive" element={<ArchivePage />}></Route> */}
-                {/* <Route path="/author" element={<AuthorPage />}></Route> */}
+                <Route
+                  path="/archive"
+                  element={<ArchivePage theme={theme} setTheme={setTheme} />}
+                ></Route>
+                <Route
+                  path="/author"
+                  element={<AuthorPage theme={theme} setTheme={setTheme} />}
+                ></Route>
                 <Route
                   path="/blogs/:id"
                   element={<BlogsInfo theme={theme} setTheme={setTheme} />}
@@ -48,6 +62,22 @@ function App() {
             </div>
           )}
         </>
+        {theme === "light" && (
+          <div className="footer light">
+            <p>
+              Webpage designed and developed by{" "}
+              <a href={"https://github.com/Anngineer"}>Anngineer</a>.
+            </p>
+          </div>
+        )}
+        {theme === "dark" && (
+          <div className="footer dark">
+            <p>
+              Webpage designed and developed by{" "}
+              <a href={"https://github.com/Anngineer"}>Anngineer</a>.
+            </p>
+          </div>
+        )}
       </ScrollToTop>
     </BrowserRouter>
   );

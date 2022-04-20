@@ -197,10 +197,13 @@ body.dark a {
 
 .row-one .first-row-image {
   width: 50%;
+  margin-right: 3rem;
 }
 
 .row-one .first-row-image img {
-  width: 60%;
+  max-width: 500px;
+  min-width: 300px;
+  width: 100%;
 }
 
 .row-one .new-post-info {
@@ -215,6 +218,35 @@ body.dark a {
 
 .row-one:hover h3 {
   color: lightseagreen;
+}
+
+@media (max-width: 863px) {
+  .row-one {
+    display: block;
+  }
+  .row-one .first-row-image {
+    width: 400px;
+    max-width: 80%;
+    margin-right: 2rem;
+    min-width: 200px;
+    margin-left: 2rem;
+    padding-left: 0;
+    margin-bottom: 1rem;
+  }
+  .row-one .first-row-image img {
+    margin-left: 0;
+    margin-right: auto;
+    max-width: 95%;
+    min-width: 200px;
+  }
+}
+
+@media (max-width: 500px) {
+  .row-one,
+  .row-two {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
 }
 
 .blog-info-page {
@@ -288,6 +320,20 @@ body.dark a {
   grid-gap: 4rem;
 }
 
+@media (max-width: 863px) {
+  .blog-cards {
+    justify-items: center;
+  }
+}
+
+@media (max-width: 500px) {
+  .blog-cards {
+    -ms-grid-columns: (minmax(200px, 1fr))[auto-fill];
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-gap: 2rem;
+  }
+}
+
 .blog-card {
   max-width: 330px;
 }
@@ -313,5 +359,52 @@ body.dark a {
 
 .row-two .blog-card:hover h3 {
   color: #fd6e64;
+}
+
+@media (max-width: 500px) {
+  .row-two {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
+
+.footer {
+  height: 20rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  padding: 3rem;
+}
+
+.footer a {
+  text-decoration: underline;
+}
+
+.footer.light {
+  color: #283043;
+  background-color: #eff3f3;
+}
+
+.footer.light a {
+  color: #283043;
+}
+
+.footer.dark {
+  color: lightseagreen;
+  background-color: #17181d;
+}
+
+.footer.dark a {
+  color: lightseagreen;
 }
 /*# sourceMappingURL=App.css.map */
