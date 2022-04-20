@@ -29,7 +29,7 @@ body {
 .App.light,
 html.light,
 body.light {
-  background-color: #eff3f3;
+  background-color: #f9fbfb;
   color: #0c1f22;
   color: #112225;
 }
@@ -38,6 +38,12 @@ body.light {
 html.light a,
 body.light a {
   color: #0c1f22;
+}
+
+.App.light .blog-info-page {
+  background-color: #eff3f3;
+  color: #0c1f22;
+  color: #112225;
 }
 
 .App.dark,
@@ -176,10 +182,6 @@ body.dark a {
 
 .banner.light button:hover {
   color: lightseagreen;
-}
-
-.home-blog-section {
-  padding: 1rem;
 }
 
 .author-body {
@@ -465,24 +467,42 @@ body.dark a {
 .row-two {
   padding-left: 5rem;
   padding-right: 5rem;
+  padding-bottom: 4rem;
 }
 
 .row-two .blog-card {
   margin-top: 4rem;
 }
 
-.row-two .blog-card img {
+.App.dark .row-two .blog-card img {
   border-bottom: solid lightseagreen 4px;
   border-right: solid lightseagreen 4px;
 }
 
-.row-two .blog-card:hover img {
+.App.dark .row-two .blog-card:hover img {
   border-bottom: solid #fd6e64 4px;
   border-right: solid #fd6e64 4px;
 }
 
-.row-two .blog-card:hover h3 {
+.App.dark .row-two .blog-card:hover h3 {
   color: #fd6e64;
+}
+
+.App.light .row-two {
+  background-image: url("./images/06.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-box-shadow: inset 0 0 0 1000px #f6f8f8e7;
+          box-shadow: inset 0 0 0 1000px #f6f8f8e7;
+}
+
+.App.light .row-two .blog-card:hover img {
+  border-bottom: solid lightseagreen 4px;
+  border-right: solid lightseagreen 4px;
+}
+
+.App.light .row-two .blog-card:hover h3 {
+  color: lightseagreen;
 }
 
 @media (max-width: 500px) {
@@ -493,7 +513,7 @@ body.dark a {
 }
 
 .footer {
-  height: 20rem;
+  height: 16rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -501,12 +521,16 @@ body.dark a {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
+  padding: 0;
+}
+
+.footer p {
   padding: 3rem;
 }
 
@@ -515,17 +539,29 @@ body.dark a {
 }
 
 .footer.light {
-  color: #283043;
-  background-color: #eff3f3;
+  color: #d4dcddd7;
+  background-color: #17181d;
 }
 
 .footer.light a {
-  color: #283043;
+  color: lightseagreen;
 }
 
 .footer.dark {
-  color: lightseagreen;
-  background-color: #17181d;
+  color: #d4dcddd7;
+  background-image: url("./images/tokyo-glitch-5.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-box-shadow: inset 0 0 0 1000px #17181db9;
+          box-shadow: inset 0 0 0 1000px #17181db9;
+}
+
+.footer.dark .footer-line {
+  height: 3px;
+  width: 100%;
+  position: relative;
+  top: 3rem;
+  background-color: #17181db9;
 }
 
 .footer.dark a {

@@ -29,13 +29,19 @@ html.light,
 body.light {
   //   background-color: #f6f8f8;
   //   background-color: #e5edee;
-  background-color: #eff3f3;
+  background-color: #f9fbfb;
   color: #0c1f22;
   color: #112225;
 
   a {
     color: #0c1f22;
   }
+}
+
+.App.light .blog-info-page {
+  background-color: #eff3f3;
+  color: #0c1f22;
+  color: #112225;
 }
 
 // Dark
@@ -169,9 +175,11 @@ body.dark {
 }
 
 // -------------------
-.home-blog-section {
-  padding: 1rem;
-}
+
+// Home Blog Section
+// .home-blog-section {
+//   padding: 1rem;
+// }
 
 .author-body {
   height: 200vh;
@@ -454,17 +462,21 @@ body.dark {
 .row-two {
   padding-left: 5rem;
   padding-right: 5rem;
-
+  padding-bottom: 4rem;
   .blog-card {
     // margin: 3rem;
     margin-top: 4rem;
+  }
+}
+
+// Dark theme Blog cards
+.App.dark .row-two {
+  .blog-card {
     img {
       border-bottom: solid lightseagreen 4px;
       border-right: solid lightseagreen 4px;
     }
-    // h3 {
-    //   color: lightseagreen;
-    // }
+
     &:hover {
       img {
         border-bottom: solid #fd6e64 4px;
@@ -476,6 +488,27 @@ body.dark {
     }
   }
 }
+
+// Light Theme Blog Cards
+.App.light .row-two {
+  background-image: url("./images/06.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-shadow: inset 0 0 0 1000px #f6f8f8e7;
+
+  .blog-card {
+    &:hover {
+      img {
+        border-bottom: solid lightseagreen 4px;
+        border-right: solid lightseagreen 4px;
+      }
+      h3 {
+        color: lightseagreen;
+      }
+    }
+  }
+}
+
 @media (max-width: 500px) {
   .row-two {
     padding-left: 1rem;
@@ -484,32 +517,53 @@ body.dark {
 }
 
 .footer {
-  // background: #283043;
-  // color: whitesmoke;
-  height: 20rem;
+  height: 16rem;
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
+  justify-content: space-between;
   align-items: flex-end;
-  padding: 3rem;
+  padding: 0;
+  p {
+    padding: 3rem;
+  }
   a {
     text-decoration: underline;
-    // color: rgba(245, 245, 245, 0.89);
   }
 }
 
+// .footer.light {
+//   color: #283043;
+//   a {
+//     color: #283043;
+//   }
+//   // color: whitesmoke;
+//   background-color: #eff3f3;
+// }
+
 .footer.light {
-  color: #283043;
+  // color: lightseagreen;
+  color: #d4dcddd7;
+  background-color: #17181d;
   a {
-    color: #283043;
+    color: lightseagreen;
   }
-  // color: whitesmoke;
-  background-color: #eff3f3;
 }
 
 .footer.dark {
-  color: lightseagreen;
-  background-color: #17181d;
+  // color: lightseagreen;
+  color: #d4dcddd7;
+  background-image: url("./images/tokyo-glitch-5.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-shadow: inset 0 0 0 1000px #17181db9;
+  .footer-line {
+    height: 3px;
+    width: 100%;
+    position: relative;
+    top: 3rem;
+    background-color: #17181db9;
+  }
+  // background-color: #17181d;
   a {
     color: lightseagreen;
   }

@@ -72,6 +72,7 @@ function App() {
         )}
         {theme === "dark" && (
           <div className="footer dark">
+            <div className="footer-line"></div>
             <p>
               Webpage designed and developed by{" "}
               <a href={"https://github.com/Anngineer"}>Anngineer</a>.
