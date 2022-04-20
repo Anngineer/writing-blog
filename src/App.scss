@@ -31,6 +31,11 @@ body.light {
   //   background-color: #e5edee;
   background-color: #eff3f3;
   color: #0c1f22;
+  color: #112225;
+
+  a {
+    color: #0c1f22;
+  }
 }
 
 // Dark
@@ -39,12 +44,15 @@ html.dark,
 body.dark {
   background-color: #17181d;
   color: #d4dcdd;
+  a {
+    color: #d4dcdd;
+  }
 }
 
 // --------------------------
 // Home --------------------
 
-.home-banner {
+.banner {
   background-repeat: no-repeat;
   width: 100%;
   min-height: 330px;
@@ -111,7 +119,7 @@ body.dark {
   }
 }
 
-.home-banner.dark {
+.banner.dark {
   background-image: url("./images/tokyo-glitch-2.png");
   background-position: left top;
   .lower-banner {
@@ -124,7 +132,8 @@ body.dark {
     button {
       background-color: white;
       &:hover {
-        background-color: pink;
+        background-color: #20b2aa;
+        background-color: #209cb2;
       }
     }
   }
@@ -143,7 +152,7 @@ body.dark {
   // background-image: linear-gradient(#f5f5f5, #e9ecec);
   background-image: linear-gradient(#f5f5f5, #eff3f3);
 }
-.home-banner.light {
+.banner.light {
   background-image: url("./images/white-wave-1.png");
   background-position: left bottom;
   .banner-underline.light {
@@ -162,4 +171,141 @@ body.dark {
 // -------------------
 .home-blog-section {
   padding: 1rem;
+}
+.row-one {
+  display: flex;
+  flex-direction: row;
+  padding-left: 5rem;
+  padding-right: 5rem;
+  padding-top: 3rem;
+  .first-row-image {
+    width: 50%;
+    img {
+      width: 60%;
+      // &:hover {
+      //   border-bottom: solid lightseagreen 3px;
+      //   border-right: solid lightseagreen 3px;
+      // }
+      // margin-left:
+    }
+  }
+
+  .new-post-info {
+    padding: 2rem;
+    padding-top: 0;
+  }
+  &:hover {
+    img {
+      border-bottom: solid lightseagreen 3px;
+      border-right: solid lightseagreen 3px;
+    }
+    h3 {
+      color: lightseagreen;
+    }
+  }
+}
+
+// -------------------------------
+// Blog Info Page
+
+.blog-info-page {
+  // background-color: #f6f8f8;
+  padding-bottom: 4rem;
+}
+
+.blog-home-nav {
+  padding: 1rem;
+  a {
+    // color: #06424b;
+    font-weight: 700;
+    font-size: 1.4rem;
+  }
+  border-bottom: solid 1px #99a9ac42;
+}
+
+.blog-section {
+  text-align: center;
+  padding-top: 2rem;
+  a {
+    // color: #23626b;
+    font-weight: 400;
+    font-size: 1rem;
+    // text-align: center;
+  }
+  h1,
+  h4 {
+    text-align: center;
+    margin-right: 3rem;
+    margin-left: 3rem;
+  }
+  h4 {
+    margin-bottom: 4rem;
+  }
+  img {
+    width: 40%;
+    // margin-bottom: 3rem;
+  }
+}
+@media (max-width: 500px) {
+  .blog-section {
+    h1,
+    h4 {
+      margin-right: 1rem;
+      margin-left: 1rem;
+    }
+  }
+}
+
+.blog-info-blog-body {
+  text-align: left;
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media (max-width: 500px) {
+  .blog-info-blog-body {
+    width: 100%;
+    padding: 2rem;
+    padding-top: 1rem;
+    text-align: justify;
+  }
+}
+
+// Blog Cards
+.blog-cards {
+  // border: 2px black solid;
+  display: grid;
+  // justify-items: center;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-gap: 4rem;
+}
+
+.blog-card {
+  max-width: 330px;
+}
+
+.row-two {
+  padding-left: 5rem;
+  padding-right: 5rem;
+
+  .blog-card {
+    // margin: 3rem;
+    margin-top: 4rem;
+    img {
+      border-bottom: solid lightseagreen 4px;
+      border-right: solid lightseagreen 4px;
+    }
+    // h3 {
+    //   color: lightseagreen;
+    // }
+    &:hover {
+      img {
+        border-bottom: solid #fd6e64 4px;
+        border-right: solid #fd6e64 4px;
+      }
+      h3 {
+        color: #fd6e64;
+      }
+    }
+  }
 }
