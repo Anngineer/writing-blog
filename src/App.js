@@ -16,7 +16,7 @@ function App() {
       : "dark"
   );
   return (
-    <BrowserRouter>
+    <BrowserRouter basename={`writing-blog` || "" || window.location.pathname}>
       <ScrollToTop>
         <>
           {theme === "light" && (
