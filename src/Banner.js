@@ -40,7 +40,7 @@ const Banner = ({ theme, setTheme }) => {
               <a href={"https://www.google.com/"}>_author</a> */}
               <Link to="/">_hoard</Link>
 
-              <Link to="/">_author</Link>
+              <Link to="/author">_author</Link>
               <Link to="/archive">_archive</Link>
 
               <button onClick={() => handleThemeButton()}>
