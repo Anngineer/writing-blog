@@ -35,7 +35,10 @@ function App() {
                   element={<AuthorPage theme={theme} setTheme={setTheme} />}
                 ></Route>
 
-                <Route path="/blogs/:id" element={<BlogsInfo />}></Route>
+                <Route
+                  path="/blogs/:id"
+                  element={<BlogsInfo theme={theme} setTheme={setTheme} />}
+                ></Route>
               </Routes>
             </div>
           )}

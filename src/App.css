@@ -117,7 +117,7 @@ body.dark a {
 }
 
 .banner button.theme-button {
-  padding: 0.4rem 0.4rem;
+  padding: 0.4rem 0.35rem;
   font-weight: 600;
   font-size: medium;
   border-radius: 50px;
@@ -475,14 +475,59 @@ body.dark a {
   color: #112225;
 }
 
+.App.dark .blog-info-page {
+  color: #eff3f3;
+  background-color: #212121;
+}
+
 .blog-home-nav {
   padding: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   border-bottom: solid 1px #99a9ac42;
 }
 
 .blog-home-nav a {
   font-weight: 700;
   font-size: 1.4rem;
+}
+
+.blog-home-nav .theme-button {
+  padding: 0.4rem 0.35rem;
+  font-weight: 600;
+  font-size: medium;
+  border-radius: 50px;
+  border: none;
+}
+
+.blog-home-nav .theme-button:hover {
+  cursor: pointer;
+}
+
+.blog-home-nav .theme-button.dark {
+  background-color: #d4dcdd;
+}
+
+.blog-home-nav .theme-button.dark:hover {
+  background-color: #20b2aa;
+  background-color: #209cb2;
+}
+
+.blog-home-nav .theme-button.light {
+  color: #eff3f3;
+  background-color: #112225;
+}
+
+.blog-home-nav .theme-button.light:hover {
+  color: lightseagreen;
 }
 
 .blog-info-page .blog-section {
@@ -538,6 +583,7 @@ body.dark a {
   width: 70%;
   margin-left: auto;
   margin-right: auto;
+  font-size: 1.2rem;
 }
 
 @media (max-width: 500px) {
@@ -545,7 +591,7 @@ body.dark a {
     width: 100%;
     padding: 2rem;
     padding-top: 1rem;
-    text-align: justify;
+    font-size: 1.1rem;
   }
 }
 
@@ -555,7 +601,6 @@ body.dark a {
     width: 240px;
     padding: 1rem;
     margin: auto;
-    text-align: justify;
   }
 }
 
