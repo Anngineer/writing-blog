@@ -466,6 +466,7 @@ body.dark a {
 
 .blog-info-page {
   padding-bottom: 4rem;
+  min-height: 100vh;
 }
 
 .App.light .blog-info-page {
