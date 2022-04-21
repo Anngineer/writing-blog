@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/writing-blog/static/css/main.0137f548.css",
+    "main.js": "/writing-blog/static/js/main.fe7b0ce6.js",
+    "static/media/tokyo-glitch-2.png": "/writing-blog/static/media/tokyo-glitch-2.eccf02d24ff744d0e5e6.png",
+    "static/media/WatercolorPoppy1.png": "/writing-blog/static/media/WatercolorPoppy1.aac2555245fec5cf69bc.png",
+    "static/media/white-wave-1.png": "/writing-blog/static/media/white-wave-1.c6c138c3bfa2e273a213.png",
+    "static/media/tokyo-glitch-5.jpg": "/writing-blog/static/media/tokyo-glitch-5.a7830b9abb6451261e82.jpg",
+    "static/media/retrogirl2a.jpg": "/writing-blog/static/media/retrogirl2a.ff22e70a8be0d54f5da5.jpg",
+    "static/media/06.jpg": "/writing-blog/static/media/06.1bbfd5af3e352e966cc3.jpg",
+    "static/media/TwistedSessionFlyerTemplate.jpg": "/writing-blog/static/media/TwistedSessionFlyerTemplate.ed87ee6a472379b7bc47.jpg",
+    "static/media/retrogirl6a.jpg": "/writing-blog/static/media/retrogirl6a.b80526eabe7dd9598c93.jpg",
+    "static/media/spacetravel1.jpg": "/writing-blog/static/media/spacetravel1.67283892e3f9b023e264.jpg",
+    "index.html": "/writing-blog/index.html",
+    "main.0137f548.css.map": "/writing-blog/static/css/main.0137f548.css.map",
+    "main.fe7b0ce6.js.map": "/writing-blog/static/js/main.fe7b0ce6.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.0137f548.css",
+    "static/js/main.fe7b0ce6.js"
+  ]
+}
