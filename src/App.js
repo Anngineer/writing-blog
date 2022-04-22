@@ -15,6 +15,10 @@ function App() {
       ? localStorage.getItem("blogTheme")
       : "dark"
   );
+
+  if (!localStorage.getItem("blogTheme")) {
+    localStorage.setItem("blogTheme", "dark");
+  }
   return (
     <BrowserRouter basename={`writing-blog` || "" || window.location.pathname}>
       <ScrollToTop>

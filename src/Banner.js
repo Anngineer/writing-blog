@@ -4,6 +4,11 @@ import { useState } from "react";
 const Banner = ({ theme, setTheme }) => {
   const handleThemeButton = () => {
     setTheme(theme === "light" ? "dark" : "light");
+    if (localStorage.getItem("blogTheme") === "dark") {
+      localStorage.setItem("blogTheme", "light");
+    } else if (localStorage.getItem("blogTheme") === "light") {
+      localStorage.setItem("blogTheme", "dark");
+    }
   };
   const [dropDownVisible, setDropDownVisible] = useState(false);
   const handleDropDown = () => {
