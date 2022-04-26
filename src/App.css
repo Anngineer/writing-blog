@@ -666,6 +666,10 @@ body.dark a {
   margin-top: 4rem;
 }
 
+.row-two .blog-card h3 {
+  margin-top: 1rem;
+}
+
 .App.dark .row-two .blog-card img {
   border-bottom: solid lightseagreen 4px;
   border-right: solid lightseagreen 4px;
@@ -730,6 +734,7 @@ body.dark a {
 
 .footer p {
   padding: 3rem;
+  text-align: right;
 }
 
 .footer a {

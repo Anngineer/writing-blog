@@ -636,6 +636,9 @@ body.dark {
   .blog-card {
     // margin: 3rem;
     margin-top: 4rem;
+    h3 {
+      margin-top: 1rem;
+    }
   }
 }
 
@@ -700,6 +703,7 @@ body.dark {
   padding: 0;
   p {
     padding: 3rem;
+    text-align: right;
   }
   a {
     text-decoration: underline;
