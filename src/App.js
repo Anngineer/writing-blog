@@ -72,6 +72,8 @@ function App() {
         {theme === "light" && (
           <div className="footer light">
             <p>
+              View more websites in this{" "}
+              <a href={"https://Anngineer.com/"}>portfolio</a>.<br />
               Webpage designed and developed by{" "}
               <a href={"https://github.com/Anngineer"}>Anngineer</a>.
             </p>
@@ -81,6 +83,8 @@ function App() {
           <div className="footer dark">
             <div className="footer-line"></div>
             <p>
+              View more websites in this{" "}
+              <a href={"https://Anngineer.com/"}>portfolio</a>.<br />
               Webpage designed and developed by{" "}
               <a href={"https://github.com/Anngineer"}>Anngineer</a>.
             </p>
