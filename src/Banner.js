@@ -1,4 +1,4 @@
-import { Button, Icon } from "semantic-ui-react";
+import { Icon } from "semantic-ui-react";
 import { Link } from "react-router-dom";
 import { useState } from "react";
 const Banner = ({ theme, setTheme }) => {
@@ -18,7 +18,7 @@ const Banner = ({ theme, setTheme }) => {
     <>
       {theme === "light" && (
         <div className="banner light">
-          <h1>Word &nbsp;Hoard</h1>
+          <h1>Writing &nbsp;Blog</h1>
           <div className="lower-banner">
             <div className="small-link-list">
               <div className="visible-nav-bar">
@@ -38,7 +38,7 @@ const Banner = ({ theme, setTheme }) => {
             </div>
 
             <div className="home-link-list">
-              <Link to="/">HOARD</Link>
+              <Link to="/">HOME</Link>
               <Link to="/author">AUTHOR</Link>
               <Link to="/archive">ARCHIVE</Link>
 
@@ -53,7 +53,7 @@ const Banner = ({ theme, setTheme }) => {
 
             {dropDownVisible && (
               <div className="small-home-link-list">
-                <Link to="/">HOARD</Link>
+                <Link to="/">HOME</Link>
                 <Link to="/author">AUTHOR</Link>
                 <Link to="/archive">ARCHIVE</Link>
               </div>
@@ -63,7 +63,7 @@ const Banner = ({ theme, setTheme }) => {
       )}
       {theme === "dark" && (
         <div className="banner dark">
-          <h1>Word &nbsp;Hoard</h1>
+          <h1>Writing &nbsp;Blog</h1>
 
           <div className="lower-banner">
             {/* Narrow width screen */}
@@ -85,7 +85,7 @@ const Banner = ({ theme, setTheme }) => {
             </div>
             {/* Wider Width Screen */}
             <div className="home-link-list">
-              <Link to="/">_hoard</Link>
+              <Link to="/">_home</Link>
               <Link to="/author">_author</Link>
               <Link to="/archive">_archive</Link>
               <button
@@ -100,7 +100,7 @@ const Banner = ({ theme, setTheme }) => {
             <div className="banner-underline dark"></div>
             {dropDownVisible && (
               <div className="small-home-link-list">
-                <Link to="/">_hoard</Link>
+                <Link to="/">_home</Link>
                 <Link to="/author">_author</Link>
                 <Link to="/archive">_archive</Link>
               </div>
