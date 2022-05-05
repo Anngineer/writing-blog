@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/writing-blog/static/css/main.1fb58538.css",
-    "main.js": "/writing-blog/static/js/main.c198f546.js",
+    "main.js": "/writing-blog/static/js/main.dddd182c.js",
     "static/media/tokyo-glitch-2.png": "/writing-blog/static/media/tokyo-glitch-2.eccf02d24ff744d0e5e6.png",
     "static/media/WatercolorPoppy1.png": "/writing-blog/static/media/WatercolorPoppy1.aac2555245fec5cf69bc.png",
     "static/media/white-wave-1.png": "/writing-blog/static/media/white-wave-1.c6c138c3bfa2e273a213.png",
@@ -13,10 +13,10 @@
     "static/media/spacetravel1.jpg": "/writing-blog/static/media/spacetravel1.67283892e3f9b023e264.jpg",
     "index.html": "/writing-blog/index.html",
     "main.1fb58538.css.map": "/writing-blog/static/css/main.1fb58538.css.map",
-    "main.c198f546.js.map": "/writing-blog/static/js/main.c198f546.js.map"
+    "main.dddd182c.js.map": "/writing-blog/static/js/main.dddd182c.js.map"
   },
   "entrypoints": [
     "static/css/main.1fb58538.css",
-    "static/js/main.c198f546.js"
+    "static/js/main.dddd182c.js"
   ]
 }
