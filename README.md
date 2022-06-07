@@ -1,6 +1,8 @@
 # writing-blog
 
-This repository is a mock template for a blog page, use JavaScript to organize and sort posts via genre tags. Local storage saves the preferred light or dark theme for future viewing.
+Deploy link: [Writing Blog Template](https://anngineer.github.io/writing-blog/).
+
+This repository is a mock template for a blog page, using JavaScript to organize and sort posts via genre tags. Local storage saves the preferred light or dark theme for future viewing.
 
 ## Details
 
